@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "RobertAriano"
+    },
+    "motivations": {
+      "@value": "I want to be a DRep because privileges set forth will help others get involved in the Cardano Constitution. This involves Catalyst meetings, as well as other communication protocols to make Cardano a necessity for end users in any sector. Being able to work together in the Cardano ecosystem with other projects helps show that Cardano is a place for people to develop better products. Professional experiences I want to share are PHD research, which has helped focus on certain groups of participants."
+    },
+    "objectives": {
+      "@value": "What I believe and what I want to achieve as a DRep is decentralization for specific focus groups. My current proposal is in relation to introducing the bodybuilding community to the Cardano Developer Portal. Through adoption of my product and service, this specific group can learn about Cardano daily. To access Pool.Pm preprod network, it is easier to go through the Cadano Developer Portal. Being able to include other businesses and demographics in my product will help promote Cardano even more. I believe testnet is very important and will bring people to the ecosystem due to public exposure of the Cardano Developer Portal."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9x3cjtuy424rlrqzchxxlpcgf5c9h0utyqtaljjwed77ld2yj7eh5t424fy8v7vs6rg6an5qnt37yt46tmjf6y4z06sw75nyq"
+    },
+    "qualifications": {
+      "@value": "The most important qualification that is relevant as a DRep for me is completing the Cardano Blockchain Certified Associate. Since my focus seems to be on the Cardano Developer Portal, it is a necessity to have this credential. Here, Cardano Academy lets you update your training daily. I believe as a business owner and a scholar it will be easier to be involved in an ecosystem which allows creativity and innovation. As a DRep I can use my experience as a proposal assessor in three funding rounds to add value to the entire ecosystem. Respect for those in the community and their willingness to develop on Cardano will add to my desire to represent others who do not have time to vote on upcoming proposals. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Training Video on Bringing the Weightlifting Community to Cardano "
+        },
+        "uri": {
+          "@value": "https://drive.google.com/file/d/1sFDei4L-riwmdL6cwwexoBLsBDfPEsG5/view?ts=6707ee8d"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Cardano Blockchain Certified Associate"
+        },
+        "uri": {
+          "@value": "https://bafybeicxtp5k4axx2cqpssnxqra4a6cwh6spy44jrmla3mjdyg5jtu7vzi.ipfs.dweb.link/"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "R&A Soccer Sports Equipment Inc."
+        },
+        "uri": {
+          "@value": "https://www.google.com/search?q=r+%26+a+soccer+sports+equipment+inc&sca_esv=2dac060d692f34ee&sxsrf=ADLYWIL71zpjcZsgYuAwdQlu3iZfcpvmxA%3A1728742083440&source=hp&ei=w4IKZ9LQGPSe0PEP47ub2As&iflsig=AL9hbdgAAAAAZwqQ05pLQst5oVkEhvODe1d1UsgUK3EZ&gs_ssp=eJwFwdEOQCAUANB5tfmH64FXt2KVT_AX3MrYKJXp851TN8M-MOZEZM93CqzmDouSgpAr4SzXTI56xkJaG5xGJR0ZuW60tBF6WCF5IhshBR9zAvu8R7jsneG46QdfkBsi&oq=R+%26+A&gs_lp=Egdnd3Mtd2l6GgIYAiIFUiAmIEEqAggAMg0QLhjHARgnGI4FGK8BMgQQIxgnMgQQIxgnMgQQIxgnMgsQLhiABBjHARivATIFEAAYgAQyCxAuGIAEGMcBGK8BMgUQABiABDIFEAAYgAQyBRAAGIAESOoYUABYlw1wAHgAkAEAmAFzoAGsBKoBAzAuNbgBAcgBAPgBAZgCBaACvgTCAgsQABiABBiRAhiKBcICCBAAGIAEGLEDwgIdEC4YgAQYsQMY0QMY0gMYgwEY8wUYxwEYqAMYiwPCAg4QABiABBixAxiDARiLA8ICGhAuGIAEGLEDGNEDGNIDGIMBGMcBGKgDGIsDwgILEC4YgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICFxAuGIAEGPMFGKYDGMcBGKgDGIsDGK8BwgIIEAAYgAQYiwOYAwCSBwMwLjWgB_Zg&sclient=gws-wiz"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Facebook - R & A Soccer Sports Equipment, Inc."
+        },
+        "uri": {
+          "@value": "https://www.facebook.com/profile.php?id=100066791825561"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Linkedin Profile"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/robert-ariano-a27515291/"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Github Repository"
+        },
+        "uri": {
+          "@value": "https://github.com/Robariano/Drep"
+        }
+      }
+    ]
+  }
+}
